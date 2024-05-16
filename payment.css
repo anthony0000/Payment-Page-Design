@@ -1,0 +1,138 @@
+body {
+    font-family: poppins;
+}
+.btn{
+    margin-top: 20px;
+    border-radius: 0px;
+    transition: all .3s ease;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    color: #fff;
+}
+.btn.success{
+    background: #665cd7;
+}
+.btn.success:hover{
+    background: #fff;
+    color: #665cd7;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 5px 20px;
+}
+.btn.danger{
+    background: #ac3232;
+}
+.btn.danger:hover{
+    background: #fff;
+    color: #ac3232;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 5px 20px;
+}
+.btn.wrapper-parent.failed{
+    background: rgb(158, 14, 14);
+}
+
+.btn.failed:hover{
+    background: #fff;
+    color: #665cd7;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 5px 20px;
+}
+
+._failed {
+    border-bottom: solid 4px red !important;
+}
+
+._failed i {
+    color: #fff !important;
+}
+
+._success {
+    box-shadow: 0 15px 25px #00000019;
+    padding: 45px;
+    width: 100%;
+    text-align: center;
+    margin: 40px auto;
+    border-bottom: solid 4px #776CF9;
+}
+
+.success._failed{
+    border-bottom: solid 4px rgb(171, 23, 23);
+}
+
+._success i {
+    font-size: 55px;
+    color: #fff;
+}
+
+._success h2 {
+    margin-bottom: 12px;
+    font-size: 27px;
+    font-weight: bolder;
+    line-height: 1.2;
+    margin-top: 10px;
+}
+
+._success p {
+    margin-bottom: 0px;
+    font-size: 15px;
+    color: #495057;
+    font-weight: 500;
+}
+
+.wrapper-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.init-wrapper {
+    height: 200px;
+    width: 200px;
+    background: rgba(120, 108, 249, 0.4);
+    border-radius: 50%;
+}
+
+.wrapper-parent.failed{
+    background: rgba(163, 12, 12, 0.514);
+}
+
+.second-wrapper {
+    height: 150px;
+    width: 150px;
+    background: rgba(120, 108, 249, 0.8);
+    border-radius: 50%;
+}
+
+.wrapper-parent.failed .second-wrapper{
+    background: rgba(163, 12, 12, 0.616);
+}
+
+.third-wrapper {
+    height: 100px;
+    width: 100px;
+    background: #665cd7;
+    border-radius: 50%;
+}
+
+.wrapper-parent.failed .third-wrapper{
+    background: rgb(163, 12, 12);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #665cd7;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4b43a5;
+}
